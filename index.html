@@ -1,0 +1,1356 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>INSINFO</title>
+<meta charset="utf-8">
+  <link rel="icon" type="image/png" href="icon/favicon.ico"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="css/css.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="javascript/js1.min.js"></script>
+</head>
+  
+<body style="background-color:#fdd9b2;">
+<div class=" w3-teal w3-padding-64 w3-margin-bottom w3-center">
+  <h1 class="w3-xxlarge w3-animate-zoom"><span style="color:orange;">WWW.</span><span style="color:#ffff33;">INSINFO</span><span style="color:green;">.COM</span></h1> 
+  <p class="w3-serif">Information About Every Institute And Course</p>
+  <input type="text" placeholder="Enter Institute name...." name="search" style="color:black;">
+  <button type="submit"><i class="fa fa-search"></i></button><br><br>
+
+
+ <div class="w3-bar w3-teal">
+  <a  class="w3-bar-item w3-button w3-animate-zoom w3-hover-opacity w3-hover-red" onclick="toggleVisibility('Home');">Home</a>
+  <a  class="w3-bar-item w3-button w3-animate-zoom w3-hover-opacity w3-hover-red" onclick="toggleVisibility('Government');">Government</a>
+  <a  class="w3-bar-item w3-button w3-animate-zoom w3-hover-opacity w3-hover-red" onclick="toggleVisibility('Private1');">Private</a>
+  <a  class="w3-bar-item w3-button w3-animate-zoom w3-hover-opacity w3-hover-red" onclick="toggleVisibility('Foreign');">Foreign </a>
+  <a  class="w3-bar-item w3-button w3-animate-zoom w3-hover-opacity w3-hover-red" onclick="toggleVisibility('Courses');">Courses</a>
+  <a  class="w3-bar-item w3-button w3-animate-zoom w3-hover-opacity w3-hover-red" onclick="toggleVisibility('Others');">Others</a>
+  <a  class="w3-bar-item w3-button w3-animate-zoom w3-hover-opacity w3-hover-red" onclick="toggleVisibility('Subscription');">Subscription</a>
+  <a  class="w3-bar-item w3-button w3-animate-zoom w3-hover-opacity w3-hover-red" onclick="toggleVisibility('Login');">Login</a>
+ </div>
+</div><br>
+
+<script>
+    var divs = ["Home", "Government","Private1", "Foreign", "Courses","Others","Subscription","Login"];
+    var visibleDivId = null;
+    function toggleVisibility(divId) {
+      if(visibleDivId === divId) {
+        visibleDivId = null;
+      } else {
+        visibleDivId = divId;
+      }
+      hideNonVisibleDivs();
+    }
+    function hideNonVisibleDivs() {
+      var i, divId, div;
+      for(i = 0; i < divs.length; i++) {
+        divId = divs[i];
+        div = document.getElementById(divId);
+        if(visibleDivId === divId) {
+          div.style.display = "block";
+        } else {
+          div.style.display = "none";
+        }
+      }
+    }
+</script>	
+<!--close all data in to a container-->
+<div>
+   
+<!--start data of home page-->
+<div class="w3-container w3-animate-zoom"id="Home">
+		   
+<div class="w3-row">
+  <div class="w3-col m4 w3-center">
+ 
+    
+    <div class="w3-bar w3-black" style="width:100%;">
+      <button class="w3-bar-item w3-button" onclick="openCity('About')">Updates</button>
+      <button class="w3-bar-item w3-button" onclick="openCity('Extra')">Extra</button>
+    </div>  
+   
+   <div id="About" class="w3-container city"style="text-align:left;">
+     <h2 class="w3-xlarge">About</h2>
+     <p class="w3-large"><a href="#">No Updates Exist !!!! </a><span class="w3-xlarge w3-animate-fading" style="color:red;">&#x261A;</span></p>
+	 <p class="w3-large"><a href="#">No Updates Exist !!!! </a><span class="w3-xlarge w3-animate-fading" style="color:red;">&#x261A;</span></p>
+	 <p class="w3-large"><a href="#">No Updates Exist !!!! </a><span class="w3-xlarge w3-animate-fading" style="color:red;">&#x261A;</span></p>
+	 <p class="w3-large"><a href="#">No Updates Exist !!!! </a><span class="w3-xlarge w3-animate-fading" style="color:red;">&#x261A;</span></p>
+	 <p class="w3-large"><a href="#">No Updates Exist !!!! </a><span class="w3-xlarge w3-animate-fading" style="color:red;">&#x261A;</span></p>
+	 <p class="w3-large"><a href="#">No Updates Exist !!!! </a><span class="w3-xlarge w3-animate-fading" style="color:red;">&#x261A;</span></p>
+   </div>  
+  
+   <div id="Extra" class="w3-container city" style="display:none;text-align:left;">
+     <h2 class="w3-xlarge">Extra Informations </h2>
+     <p class="w3-large"><a href="#">No Informations Here !!!! </a><span class="w3-xlarge w3-animate-fading" style="color:red;">&#x261A;</span></p>
+	 <p class="w3-large"><a href="#">No Informations Here !!!! </a><span class="w3-xlarge w3-animate-fading" style="color:red;">&#x261A;</span></p>
+	 <p class="w3-large"><a href="#">No Informations Here !!!! </a><span class="w3-xlarge w3-animate-fading" style="color:red;">&#x261A;</span></p>
+	 <p class="w3-large"><a href="#">No Informations Here !!!! </a><span class="w3-xlarge w3-animate-fading" style="color:red;">&#x261A;</span></p>
+	 <p class="w3-large"><a href="#">No Informations Here !!!! </a><span class="w3-xlarge w3-animate-fading" style="color:red;">&#x261A;</span></p>
+	 <p class="w3-large"><a href="#">No Informations Here !!!! </a><span class="w3-xlarge w3-animate-fading" style="color:red;">&#x261A;</span></p>
+   </div><br><br>
+                 <script>
+                   function openCity(cityName) {
+                    var i;
+                    var x = document.getElementsByClassName("city");
+                    for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";  
+                     }
+                    document.getElementById(cityName).style.display = "block";  
+                    }
+                 </script> 
+   
+   <ul class="w3-ul w3-card" style="width:100%;">
+    <li class="w3-gray"><a href="#3">Indian Institute Of Technology</a></li>
+    <li><a href="#3">National Institute Of Technology</a></li>
+    <li class="w3-gray"><a href="#3">Government Funded Engineering Institutes</a></li>
+	<li><a href="#3">Agriculture College</a></li>
+    <li class="w3-gray"><a href="#3">Delhi Public School</a></li>
+    <li><a href="#3">Commerce College</a></li>
+	<li class="w3-gray"><a href="#3">Medical College</a></li>
+    <li><a href="#3">Law colleges</a></li>
+    <li class="w3-gray"><a href="#3">I.S.R.O</a></li>
+    </ul><br><br><h1 class="w3-xlarge">Also Watch this !!!!!!!!</h1>
+       <iframe width="70%" height="70%" src="https://www.youtube.com/embed/ziu4nM7C_zg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <br><br><h1 class="w3-xlarge">Also Watch this !!!!!!!!</h1>
+       <iframe width="70%" height="70%" src="https://www.youtube.com/embed/4KjqbLEF3RE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <br><br><h1 class="w3-xlarge">You May Also Know About !!!!!!!!</h1><br><br>
+   
+   <table class="table table-hover">
+	          <tr style="background-color:teal;" >
+			    <th>S.NO</th>
+				<th>Informations</th>
+				<th>CATEGORY</th>
+			  </tr>	
+			  <tr>
+			    <td>1</td>
+				<td><a href="#">Robotics</a></td>
+				<td>IT</td>
+			  </tr>
+			  <tr>
+			    <td>2</td>
+				<td><a href="#">Artificial Intelligence</a></td>
+				<td>IT</td>
+			  </tr>
+			  <tr>
+			    <td>3</td>
+				<td><a href="#">Mining</a></td>
+				<td>Metulargy</td>
+			  </tr>
+			  <tr>
+			    <td>4</td>
+				<td><a href="#">Software Development</a></td>
+				<td>Software</td>
+			  </tr>
+			  <tr>
+			    <td>5</td>
+				<td><a href="#">Networking</a></td>
+				<td>NW</td>
+			  </tr>
+   </table>	<br><br><h1 class="w3-xlarge">Intresting Things About Science And Technology</h1>
+            
+               <table class="table table-hover">
+	          <tr style="background-color:teal;" >
+			    <th>S.NO</th>
+				<th>Topics</th>
+				<th>CATEGORY</th>
+			  </tr>	
+			  <tr>
+			    <td>1</td>
+				<td><a href="#">Earth Science</a></td>
+				<td>science And Technology</td>
+			  </tr>
+			  <tr>
+			    <td>2</td>
+				<td><a href="#">Planetary Science</a></td>
+				<td>science And Technology</td>
+			  </tr>
+			  <tr>
+			    <td>3</td>
+				<td><a href="#">Space Science</a></td>
+				<td>science And Technology</td>
+			  </tr>
+			  <tr>
+			    <td>4</td>
+				<td><a href="#">Astrophysics</a></td>
+				<td>science And Technology</td>
+			  </tr>
+			  <tr>
+			    <td>5</td>
+				<td><a href="#">Communication & Computing</a></td>
+				<td>science And Technology</td>
+			  </tr>
+			  <tr>
+			    <td>6</td>
+				<td><a href="#">Instrument Technology</a></td>
+				<td>science And Technology</td>
+			  </tr>
+             </table>
+        <center>
+              <img class="w3-image w3-spin" src="image/1.png" style="width:20%;height:auto;">			 
+		</center>	  
+ </div>
+ 
+  <div class="w3-col m1 w3-center"> 
+    .
+  </div>
+  
+  <div class="w3-col m7 w3-center"> 
+   <div class="w3-content w3-section w3-animate-zoom" style="max-width:700px">
+     <img class="mySlides" src="image/ss1.jpg" style="width:100%;height:auto;">
+     <img class="mySlides" src="image/ss2.jpg" style="width:100%;height:auto;">
+     <img class="mySlides" src="image/s3.jpg" style="width:100%;height:auto;">
+	 <img class="mySlides" src="image/s4.jpg" style="width:100%;height:auto;">
+	 <img class="mySlides" src="image/s5.jpg" style="width:100%;height:auto;">
+	 <img class="mySlides" src="image/s5.jpg" style="width:100%;height:auto;">
+   </div>
+                  <script>
+                        var myIndex = 0;
+                        carousel();
+
+                        function carousel() {
+                        var z;
+                        var x = document.getElementsByClassName("mySlides");
+                        for (z = 0; z < x.length; z++) {
+                             x[z].style.display = "none";  
+                            }
+                        myIndex++;
+                        if (myIndex > x.length) {myIndex = 1}    
+                        x[myIndex-1].style.display = "block";  
+                        setTimeout(carousel, 2000);
+                        }
+                    </script><br>
+                    
+					
+	<h1 class="w3-xxlarge "style="text-align:left;">ENGINEERING</h1><br>
+	  <div class="w3-col m8 w3-center"> 
+       <p style="letter-spacing:1px;text-align:left;color:blue;">The steam engine, a major driver in the Industrial Revolution, underscores
+   	      the importance of engineering in modern history. This beam engine is on display
+ 		  in the Technical University of Madrid.
+          Engineering is the creative application of science, mathematical methods, and 
+		  empirical evidence to the innovation, design, construction, and maintenance of
+		  structures, machines, materials, devices, systems, processes, and organizations. 
+		  The discipline of engineering encompasses a broad range of more specialized fields 
+		  of engineering, each with a more specific emphasis on particular areas of applied 
+		  mathematics, applied science, and types of application. See glossary of engineering.
+
+          The term engineering is derived from the Latin ingenium, meaning "cleverness" and ingeniare, 
+		  meaning "to contrive, devise.</p>
+      </div>
+	  
+	  <div class="w3-col m4 w3-center">
+	    <img class="w3-image w3-hover-opacity " src="image/ee1.jpg" style="width:70%;height:auto;border-radius:20px;"><br><br>
+		<img class="w3-image w3-hover-opacity " src="image/ee2.jpg" style="width:70%;height:auto;border-radius:20px;"><br><br>
+	  </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	  <h2 class="w3-xlarge"style="text-align:left;">Engineering Courses</h2><br>
+	  
+	  <div class="w3-col m5 w3-center">
+       <div class="w3-display-container"><a href="#">	  
+	    <img class="w3-image w3-hover-opacity " src="image/comp.jpg" style="width:70%;height:70%;border-radius:20px;"><br><br>
+		  <div class="w3-padding w3-display-middle" style="font-size:20px;font-weight:4px;background-color:rgba(255,255,0,0.3);">Computer Science</div></a>
+	   </div>
+       <div class="w3-display-container"><a href="#">	   
+		<img class="w3-image  w3-hover-opacity" src="image/electrical.jpg" style="width:70%;height:70%;border-radius:20px;"><br><br>
+		  <div class="w3-padding w3-display-middle"style="font-size:20px;font-weight:4px;background-color:rgba(255,255,0,0.3);">Electrical Engineering</div></a>
+	   </div>	  
+	   <div class="w3-display-container"><a href="#">	  
+		<img class="w3-image  w3-hover-opacity" src="image/electronics.jpg" style="width:70%;height:70%;border-radius:20px;"><br><br>
+		  <div class="w3-padding w3-display-middle"style="font-size:20px;font-weight:4px;background-color:rgba(255,255,0,0.3);">Electronics </div></a>
+	   </div>	  
+	   <div class="w3-display-container"><a href="#">	  
+		<img class="w3-image w3-hover-opacity " src="image/chemical.jpg" style="width:70%;height:70%;border-radius:20px;"><br><br>
+		  <div class="w3-padding w3-display-middle"style="font-size:20px;font-weight:4px;background-color:rgba(255,255,0,0.3);">Chemical Engineering</div></a>
+	   </div>	  
+	   <div class="w3-display-container"><a href="#">	  
+		<img class="w3-image  w3-hover-opacity" src="image/austronout.jpg" style="width:70%;height:70%;border-radius:20px;"><br><br>
+		  <div class="w3-padding w3-display-middle"style="font-size:20px;font-weight:4px;background-color:rgba(255,255,0,0.3);">Aeronotical Engineering</div></a>
+	   </div>	  
+	  </div>
+	  
+	  <div class="w3-col m2 w3-center">. 
+	  </div>
+	  
+	  <div class="w3-col m5 w3-center"> 
+	   <div class="w3-display-container"><a href="#">
+	    <img class="w3-image w3-hover-opacity" src="image/biotech.jpg" style="width:70%;height:70%;border-radius:20px;"><br><br>
+		  <div class="w3-padding w3-display-middle"style="font-size:20px;font-weight:4px;background-color:rgba(255,255,0,0.3);">Biotechnology</div></a>
+	   </div>	 
+	   <div class="w3-display-container"><a href="#">	 
+		<img class="w3-image w3-hover-opacity " src="image/mechanical.jpg" style="width:70%;height:70%;border-radius:20px;"><br><br>
+		  <div class="w3-padding w3-display-middle"style="font-size:20px;font-weight:4px;background-color:rgba(255,255,0,0.3);">Mechanical  Engineering</div></a>
+	   </div>	  
+	   <div class="w3-display-container"><a href="#">	  
+		<img class="w3-image w3-hover-opacity" src="image/civil.jpg" style="width:70%;height:70%;border-radius:20px;"><br><br>
+		  <div class="w3-padding w3-display-middle"style="font-size:20px;font-weight:4px;background-color:rgba(255,255,0,0.3);">Civil Engineering</div></a>
+	   </div>	  
+	   <div class="w3-display-container"><a href="#">	  
+		<img class="w3-image w3-hover-opacity" src="image/environment.jpg" style="width:70%;height:70%;border-radius:20px;"><br><br>
+		  <div class="w3-padding w3-display-middle"style="font-size:20px;font-weight:4px;background-color:rgba(255,255,0,0.3);">Environmental Engineering</div></a>
+	   </div>	  
+	   <div class="w3-display-container"><a href="#">	  
+		<img class="w3-image w3-hover-opacity" src="image/genetic.jpg" style="width:70%;height:70%;border-radius:20px;"><br><br>
+		  <div class="w3-padding w3-display-middle"style="font-size:20px;font-weight:4px;background-color:rgba(255,255,0,0.3);">Genetic Engineering</div></a>
+	   </div>
+	    
+  </div>
+     
+</div>
+</div>
+</div>
+<!--End data of Home Page-->
+
+<!--start government page-->
+					
+					
+<div class="w3-container w3-animate-zoom" id="Government" style="display:none;">
+   <div class="w3-row">
+     <div class="w3-col m6 w3-center">
+	    <h1 class="w3-xxlarge"style="text-align:left;"><span style="color:orange;"><span class="w3-xxxlarge">G</span>OVERNMENT</span><span style="color: #8080ff;"> EDUCATION</span><span style="color:green;"> POLICIES</span></h1><br>
+		   <div class="w3-col m8 w3-center">
+		     <h1 style="text-align:left;" >NPE-1968</h1>
+			  <h3 style="text-align:left;color:gray;">
+                According to the National Policy on Education-1968, the government of India had formulated certain principles to promote the development of education in the country</h3>
+			   <ul style="text-align:left;">
+			    <li style="color:blue;"><span class="w3-xlarge" style="color:black">Free and Compulsory Education:</span> Education should be free and compulsory up to the age of 14.
+				Steps should be taken to ensure that child who is enrolled in the school should successfully 
+				complete the course.<li>
+				<li style="color:blue;"><span class="w3-xlarge"style="color:black">Language Development : </span>The policy had also emphasized on the development of Indian as well 
+				as foreign languages in the country. The three language formula should be introduced in which 
+				a student at the secondary level should know Hindi, English and the regional language of his state.
+				The language Sanskrit has been included as an optional subject in secondary level.</li>
+				<li style="color:blue;"><span class="w3-xlarge"style="color:black">Education of Teachers:</span> Teacher is the most important person to determine the quality of 
+				education in the country. He should be honored in the society. His emoluments and service 
+				standard should be increased with due regards to their responsibilities and qualifications.
+				Proper attention should be given for teacher education. They should also get academic freedom 
+				to write, to study and to speak on national and international issues. The constitution of India 
+				mentions freedom of expression to all.</li>
+				<li style="color:blue;"><span class="w3-xlarge"style="color:black">Education Opportunity for all :</span>Under this policy every child of the country should get education
+				irrespective of caste, religion, region or whatever the case may be. Special emphasis should be given 
+				to backward classes, minority children, girls and physically challenged children to avail the education
+				facilities.</li>
+				<li style="color:blue;"><span class="w3-xlarge"style="color:black">Uniform Education Structure :</span>The structure of education should be uniform throughout the country. 
+				It should be a 10+2+3 pattern from higher secondary to college level.</li>
+				<li style="color:blue;"><span class="w3-xlarge"style="color:black">Uniform Education Structure :</span>During the course of study each student should get an atmosphere for
+				sports and games. He should also develop the quality of work experience and should also participate in 
+				programmes related to National construction and Community services.</li>
+				<li style="color:blue;"><span class="w3-xlarge"style="color:black">To review the progress :</span>The government should review the progress of education in the country from 
+				time to time and should present guidelines for future development. </li>
+			  </ul>	
+			  <br><br>
+		   
+		   <h1 class="w3-xlarge">Know About AIIMS !!!!!</h1><br><br>
+		   <iframe width="300" height="200" src="https://www.youtube.com/embed/9Ffaqazwxw8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		   
+		   
+		   <h1 class="w3-xlarge">Some Discoveries In Medical Science !!!!!</h1><br><br>
+		   <iframe width="300" height="200" src="https://www.youtube.com/embed/fmO3SQglFSA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		  
+		   </div>
+		  </div>
+		 <div class="w3-col m6 w3-center">
+		 
+			     <div class="w3-content w3-section" style="max-width:600px">
+				 <img class="w3-image" src="image/g1.jpeg" style="width:100%;height:auto;">
+                 </div><br><br>
+				 <h1 class="w3-xxlarge">TOP GOVERNMENT ENGINEERING INSTITUTES IN INDIA</h1><br><br>
+				 <div class="w3-bar w3-black" style="width:100%;">
+                     <button class="w3-bar-item w3-button" onclick="openCity('iit')">I.I.T</button>
+                     <button class="w3-bar-item w3-button" onclick="openCity('nit')">N.I.T</button>
+					 <button class="w3-bar-item w3-button" onclick="openCity('gfti')">G.F.T.I</button>
+                     <button class="w3-bar-item w3-button" onclick="openCity('govuni')">GOVERNMENT UNIVERSITIES</button>
+                 </div>
+				 
+		<div id="iit" class="w3-container city">
+		    <img class="w3-image" src="image/iit1.jpg" style="width:100%;height:auto;align:left;"><br>
+			<table class="table table-hover" style="text-align:left;">
+	            <tr style="background-color:orange;" >
+			       <th>S.NO</th>
+				   <th>INSTITUTE NAME</th>
+				   <th>CATEGORY</th>
+			       </tr>	
+			  
+			     <tr>
+			       <td>1</td>
+				   <td><a href="https://www.iitm.ac.in/">Indian Institute of Technology Madras</a></td>
+				   <td>GOV.</td>
+			       </tr>	
+			  
+			     <tr>
+			       <td>2</td>
+				   <td><a href="http://www.iitb.ac.in/">Indian Institute of Technology Bombay</a></td>
+				   <td>GOV.</td>
+			     </tr>
+			  
+			  <tr>
+			    <td>3</td>
+				<td><a href="http://www.iitkgp.ac.in/">Indian Institute of Technology Kharagpur</a></td>
+				<td>GOV.</td>
+			  </tr>
+			  
+			  <tr>
+			    <td>4</td>
+				<td><a href="http://www.iitd.ac.in/">Indian Institute of Technology Delhi</a></td>
+				<td>GOV.</td>
+			  </tr>
+			  
+			  <tr>
+			    <td>5</td>
+				<td><a href="https://www.iitk.ac.in/">Indian Institute of Technology Kanpur</a></td>
+				<td>GOV.</td>
+			  </tr>
+			  
+			  <tr>
+			    <td>6</td>
+				<td><a href="https://www.iitr.ac.in/">Indian Institute of Technology Roorkee</a></td>
+				<td>GOV.</td>
+			  </tr>
+			  
+			  <tr>
+			    <td>7</td>
+				<td><a href="http://www.iitg.ac.in/">Indian Institute of Technology Guwahati</a></td>
+				<td>GOV.</td>
+			  </tr>
+			  
+			  <tr>
+			    <td>8</td>
+				<td><a href="https://www.iith.ac.in/">Indian Institute of Technology Hyderabad</a></td>
+				<td>GOV.</td>
+			  </tr>
+			  
+			  <tr>
+			    <td>9</td>
+				<td><a href="http://www.iiti.ac.in/">Indian Institute of Technology Indore</a></td>
+				<td>GOV.</td>
+			  </tr>
+			  
+			  <tr>
+			    <td>10</td>
+				<td><a href="http://www.iitbbs.ac.in/">Indian Institute of Technology Bhubaneswar</a></td>
+				<td>GOV.</td>
+			  </tr>
+	   </table>
+	</div>
+				
+         <div id="nit" class="w3-container city"style="display:none;">
+		     <table class="table table-hover" style="text-align:left;">
+	          <tr style="background-color:orange;" >
+			    <th>S.NO</th>
+				<th>INSTITUTE NAME</th>
+				<th>CATEGORY</th>
+			  </tr>	
+			  
+			  <tr>
+			    <td>1</td>
+				<td><a href="https://www.nitt.edu/">NIT Tiruchirappalli, Tamil Nadu</a></td>
+				<td>GOV.</td>
+			  </tr>	
+			  
+			  <tr>
+			    <td>2</td>
+				<td><a href="http://www.nitrkl.ac.in/">NIT Rourkela, Odisha</a></td>
+				<td>GOV.</td>
+			  </tr>
+			  
+			  <tr>
+			    <td>3</td>
+				<td><a href="http://www.nitk.ac.in/">NIT Surathkal, Karnataka</a></td>
+				<td>GOV.</td>
+			  </tr>
+			  
+			  <tr>
+			    <td>4</td>
+				<td><a href="https://www.nitw.ac.in/main/">NIT Warangal, Telangana</a></td>
+				<td>GOV.</td>
+			  </tr>
+			  
+			  <tr>
+			    <td>5</td>
+				<td><a href="http://www.mnnit.ac.in/">Motilal Nehru NIT, UP</a></td>
+				<td>GOV.</td>
+			  </tr>
+			  
+			  <tr>
+			    <td>6</td>
+				<td><a href="http://www.vnit.ac.in/">Visvesvaraya NIT, Maharashtra</a></td>
+				<td>GOV.</td>
+			  </tr>
+			  
+			  <tr>
+			    <td>7</td>
+				<td><a href="http://www.nitc.ac.in/">NIT Calicut, Kerala	</a></td>
+				<td>GOV.</td>
+			  </tr>
+			  
+			  <tr>
+			    <td>8</td>
+				<td><a href="http://www.svnit.ac.in/">Sardar Vallabhbhai NIT, Gujarat</a></td>
+				<td>GOV.</td>
+			  </tr>
+			  
+			  <tr>
+			    <td>9</td>
+				<td><a href="http://www.nits.ac.in/">NIT Silchar, Assam</a></td>
+				<td>GOV.</td>
+			  </tr>
+			  
+			  <tr>
+			    <td>10</td>
+				<td><a href="http://www.nitdgp.ac.in/">NIT Durgapur, WEST-BANGAL</a></td>
+				<td>GOV.</td>
+			  </tr>
+	   </table>
+	</div>	
+			
+            <div id="gfti" class="w3-container city"style="display:none;">
+			   <table class="table table-hover"style="text-align:left;">
+	          <tr style="background-color:orange;" >
+			    <th>S.NO</th>
+				<th>INSTITUTE NAME</th>
+				<th>CATEGORY</th>
+			  </tr>	
+			  
+			  <tr>
+			    <td>1</td>
+				<td><a href="http://www.aus.ac.in/">Assam University, Silchar</a></td>
+				<td>GOV.</td>
+			  </tr>	
+			  
+			  <tr>
+			    <td>2</td>
+				<td><a href="https://www.bitmesra.ac.in/">Birla Institute of Technology, Mesra, Ranchi</a></td>
+				<td>GOV.</td>
+			  </tr>
+			  
+			  <tr>
+			    <td>3</td>
+				<td><a href="http://www.gkv.ac.in/">Gurukula Kangri Vishwavidyalaya, Haridwar</a></td>
+				<td>GOV.</td>
+			  </tr>
+			  
+			  <tr>
+			    <td>4</td>
+				<td><a href="https://www.iict.ac.in/">Indian Institute of Carpet Technology, Bhadohi</a></td>
+				<td>GOV.</td>
+			  </tr>
+			  
+			  <tr>
+			    <td>5</td>
+				<td><a href="http://iitram.ac.in/">Institute of Infrastructure, Technology, Research and Management- Ahmedabad</a></td>
+				<td>GOV.</td>
+			  </tr>
+			  
+			  <tr>
+			    <td>6</td>
+				<td><a href="http://www.ggu.ac.in/Academic_Department_Institute%20of%20Technology.html">Institute of Technology, Guru Ghasidas Vishwavidyalaya, Bilaspur</a></td>
+				<td>GOV.</td>
+			  </tr>
+			  
+			  <tr>
+			    <td>7</td>
+				<td><a href="https://www.collegepravesh.com/engineering-colleges/jkiapt-allahabad/">J.K. Institute of Applied Physics & Technology, Allahabad</a></td>
+				<td>GOV.</td>
+			  </tr>
+			  
+			  <tr>
+			    <td>8</td>
+				<td><a href="http://www.nielit.gov.in/aurangabad/">National Institute of Electronics and Information Technology, Aurangabad</a></td>
+				<td>GOV.</td>
+			  </tr>
+			  
+			  <tr>
+			    <td>9</td>
+				<td><a href="http://www.nifft.ac.in/">National Institute of Foundry & Forge Technology, Hatia, Ranchi</a></td>
+				<td>GOV.</td>
+			  </tr>
+			  
+			  <tr>
+			    <td>10</td>
+				<td><a href="http://sliet.ac.in/">Sant Longowal Institute of Engineering and Technology</a></td>
+				<td>GOV.</td>
+			  </tr>
+	   </table>
+	</div>
+			
+			<div id="govuni" class="w3-container city"style="display:none;">
+			   <table class="table table-hover"style="text-align:left;">
+	          <tr style="background-color:orange;" >
+			    <th>S.NO</th>
+				<th>INSTITUTE NAME</th>
+				<th>CATEGORY</th> 
+			  </tr>	
+			  
+			  <tr>
+			    <td>1</td>
+				<td><a href="http://www.iisc.ac.in/">Indian Institute of Science Bangalore</a></td>
+				<td>GOV.</td>
+			  </tr>	
+			  
+			  <tr>
+			    <td>2</td>
+				<td><a href="https://www.jnu.ac.in/main/">Jawaharlal Nehru University, New Delhi</a></td>
+				<td>GOV.</td>
+			  </tr>
+			  
+			  <tr>
+			    <td>3</td>
+				<td><a href="http://www.bhu.ac.in/">Banaras Hindu University, Varanasi</a></td>
+				<td>GOV.</td>
+			  </tr>
+			  
+			  <tr>
+			    <td>4</td>
+				<td><a href="http://www.jncasr.ac.in/">Jawaharlal Nehru Centre for Advanced Scientific Research</a></td>
+				<td>GOV.</td>
+			  </tr>
+			  
+			  <tr>
+			    <td>5</td>
+				<td><a href="http://www.jaduniv.edu.in/">Jadavpur University</a></td>
+				<td>GOV.</td>
+			  </tr>
+			  
+			  <tr>
+			    <td>6</td>
+				<td><a href="https://www.annauniv.edu/">Anna University</a></td>
+				<td>GOV.</td>
+			  </tr>
+			  
+			  <tr>
+			    <td>7</td>
+				<td><a href="https://www.uohyd.ac.in/">University of Hyderabad, Hyderabad	</a></td>
+				<td>GOV.</td>
+			  </tr>
+			  
+			  <tr>
+			    <td>8</td>
+				<td><a href="http://www.du.ac.in/du/">University of Delhi, Delhi</a></td>
+				<td>GOV.</td>
+			  </tr>
+			  
+			  <tr>
+			    <td>9</td>
+				<td><a href="https://www.amrita.edu/admissions/btech-2018/?utm_source=Google&utm_medium=cpc&utm_campaign=Btech_Admission&utm_term=engineering%20college&gclid=CjwKCAiArOnUBRBJEiwAX0rG_fewgaTPCBcIGnC20CBU3lWo49LfemJgzvbeu46TFvQvALZLrzt_IxoCbW8QAvD_BwE">Amrita Vishwa Vidyapeetham</a></td>
+				<td>GOV.</td>
+			  </tr>
+			  
+			  <tr>
+			    <td>10</td>
+				<td><a href="http://www.unipune.ac.in/">Savitribai Phule Pune University</a></td>
+				<td>GOV.</td>
+			  </tr>
+	   </table>	
+	</div><br><br>
+	
+	    <h1 class="w3-xxlarge">TOP GOVERNMENT MEDICAL COLLEGES IN INDIA</h1><br><br>
+		
+        <div class="w3-bar w3-black" style="width:100%;">
+                     <button class="w3-bar-item w3-button" onclick="openCity('top')">TOP</button>
+                     <button class="w3-bar-item w3-button" onclick="openCity('homyopath')">HOMYOPATH</button>
+					 <button class="w3-bar-item w3-button" onclick="openCity('ayurvigyan')">AYURVIGYAN</button>
+                     <button class="w3-bar-item w3-button" onclick="openCity('dental')">DENTAL</button>
+                 </div>		
+			 
+			 <div id="top"class="w3-container city">
+			    <table class="table table-hover"style="text-align:left;">
+	          <tr style="background-color:orange;" >
+			    <th>S.NO</th>
+				<th>COLLEGE NAME</th>
+				<th>CATEGORY</th> 
+			  </tr>	
+			  
+			  <tr>
+			    <td>1</td>
+				<td><a href="https://www.aiims.edu/en.html">All India Institute of Medical Sciences, Delhi</a></td>
+				<td>GOV.</td>
+			  </tr>	
+			  
+			  <tr>
+			    <td>2</td>
+				<td><a href="http://www.cmch-vellore.edu/">Christian Medical College, Vellore</a></td>
+				<td>GOV.</td>
+			  </tr>
+			  
+			  <tr>
+			    <td>3</td>
+				<td><a href="http://www.mamc.ac.in/">Maulana Azad Medical College, New Delhi</a></td>
+				<td>GOV.</td>
+			  </tr>
+			  
+			  <tr>
+			    <td>4</td>
+				<td><a href="http://www.afmc.nic.in">Armed Forces Medical College, Pune</a></td>
+				<td>GOV.</td>
+			  </tr>
+			  
+			  <tr>
+			    <td>5</td>
+				<td><a href="https://manipal.edu/kmc-manipal.html">Kasturba Medical College, Manipal</a></td>
+				<td>GOV.</td>
+			  </tr>
+			  
+			  <tr>
+			    <td>6</td>
+				<td><a href="http://lhmc-hosp.gov.in">Lady Hardinge Medical College, New Delhi</a></td>
+				<td>GOV.</td>
+			  </tr>
+			  
+			  <tr>
+			    <td>7</td>
+				<td><a href="http://www.gmcjjh.org">Grant Medical College, Mumbai</a></td>
+				<td>GOV.</td>
+			  </tr>
+			  
+			  <tr>
+			    <td>8</td>
+				<td><a href="http://www.ucms.ac.in/">University College of Medical Sciences & GTB Hospital, New Delhi</a></td>
+				<td>GOV.</td>
+			  </tr>
+			  
+			  <tr>
+			    <td>9</td>
+				<td><a href="http://www.kgmu.org/">King George’s Medical University, Lucknow</a></td>
+				<td>GOV.</td>
+			  </tr>
+			  
+			  <tr>
+			    <td>10</td>
+				<td><a href="http://www.sriramachandra.edu.in/">Sri Ramachandra Medical College and Research Institute, Chennai</a></td>
+				<td>GOV.</td>
+			  </tr>
+	   </table>
+	</div>
+	
+	        <div id="homyopath"class="w3-container city" style="display:none;">
+			  <table class="table table-hover" style="text-align:left;">
+	          <tr style="background-color:orange;" >
+			    <th>S.NO</th>
+				<th>COLLEGE NAME</th>
+				<th>CATEGORY</th> 
+			  </tr>	
+			  
+			  <tr>
+			    <td>1</td>
+				<td><a href="http://www.nhmc.delhigovt.nic.in/">Nehru Homoeopathic Medical College & Hospital, Delhi</a></td>
+				<td>GOV.</td>
+			  </tr>	
+			  
+			  <tr>
+			    <td>2</td>
+				<td><a href="http://www.nih.nic.in/"> National Institute of Homeopathy, Kolkata</a></td>
+				<td>GOV.</td>
+			  </tr>
+			  
+			  <tr>
+			    <td>3</td>
+				<td><a href="http://homoeopathyarc.com/">HomeopathyArc, Indore</a></td>
+				<td>GOV.</td>
+			  </tr>
+			  
+			  <tr>
+			    <td>4</td>
+				<td><a href="http://bakson.net/college/index.html">Bakson Homeopathy Medical College and Hospital, Noida</a></td>
+				<td>GOV.</td>
+			  </tr>
+			  
+			  <tr>
+			    <td>5</td>
+				<td><a href="http://www.bhmc.edu.in/">Bharatesh Homeopathic Medical College, Belgaum, Karnataka</a></td>
+				<td>GOV.</td>
+			  </tr>
+			  
+			  <tr>
+			    <td>6</td>
+				<td><a href="http://sairamhomoeo.edu.in/">Shri SaiRam Homoeopathy  Medical College and Research  Centre , Chennai</a></td>
+				<td>GOV.</td>
+			  </tr>
+			  
+			  <tr>
+			    <td>7</td>
+				<td><a href="http://www.homeopathyinstitute.in/">C.M.P. Homoeopathic Medical College, Mumbai</a></td>
+				<td>GOV.</td>
+			  </tr>
+			  
+			  <tr>
+			    <td>8</td>
+				<td><a href="
+http://www.bhmcindia.in/">Baroda Homeopathic Medical College, Gujarat</a></td>
+				<td>GOV.</td>
+			  </tr>
+			  
+			  <tr>
+			    <td>9</td>
+				<td><a href="http://www.htcampus.com/college/dhondumama-sathe-homoeopathic-medical-college/">Dhondumama Sathe Homoeopathic Medical College</a></td>
+				<td>GOV.</td>
+			  </tr>
+			  
+			  <tr>
+			    <td>10</td>
+				<td><a href="http://sairamhomoeo.edu.in/">Sir Sairam Homeopathy Medical College, Allahabad</a></td>
+				<td>GOV.</td>
+			  </tr>
+	   </table>	
+	</div>
+			
+			<div id="ayurvigyan"class="w3-container city"style="display:none;">
+			  <table class="table table-hover" style="text-align:left;">
+	          <tr style="background-color:orange;" >
+			    <th>S.NO</th>
+				<th>COLLEGE NAME</th>
+				<th>CATEGORY</th> 
+			  </tr>	
+			  
+			  <tr>
+			    <td>1</td>
+				<td><a href="http://www.shridhanwantrigroup.com/">Shri Dhanwantri Ayurvedic College, Chandigarh</a></td>
+				<td>GOV.</td>
+			  </tr>	
+			  
+			  <tr>
+			    <td>2</td>
+				<td><a href="http://www.rguhs.ac.in/"> Rajiv Gandhi University of Health Sciences, Bangalore</a></td>
+				<td>GOV.</td>
+			  </tr>
+			  
+			  <tr>
+			    <td>3</td>
+				<td><a href="http://www.ayurveduniversity.edu.in/">Gujarat Ayurved University, Jamnagar</a></td>
+				<td>GOV.</td>
+			  </tr>
+			  
+			  <tr>
+			    <td>4</td>
+				<td><a href="http://amcpethvadgaon.com/">JB Roy State Medical College, Kolkata</a></td>
+				<td>GOV.</td>
+			  </tr>
+			  
+			  <tr>
+			    <td>5</td>
+				<td><a href="http://www.kedariredekarinstitutes.com/KR/">Ayurvedic Medical College, Kolhapur</a></td>
+				<td>GOV.</td>
+			  </tr>
+			  
+			  <tr>
+			    <td>6</td>
+				<td><a href="http://www.saclko.org/">State Ayurvedic College of Lucknow</a></td>
+				<td>GOV.</td>
+			  </tr>
+			  
+			  <tr>
+			    <td>7</td>
+				<td><a href="http://shriayurvednagpur.org/">Shri Ayurveda Mahavidyalaya, Nagpur</a></td>
+				<td>GOV.</td>
+			  </tr>
+			  
+			  <tr>
+			    <td>8</td>
+				<td><a href="http://www.rishikulayurveda.com/"> Rishikul Government PG Ayurvedic College & Hospital, Haridwar</a></td>
+				<td>GOV.</td>
+			  </tr>
+			  
+			  <tr>
+			    <td>9</td>
+				<td><a href="https://davayurveda.com/"> Dayanand Ayurvedic College, Jalandhar</a></td>
+				<td>GOV.</td>
+			  </tr>
+			  
+			  <tr>
+			    <td>10</td>
+				<td><a href="http://www.dauniv.ac.in/">Devi Ahilya Vishwavidyalaya, Indore</a></td>
+				<td>GOV.</td>
+			  </tr>
+	   </table>	
+	</div>
+			
+			<div id="dental"class="w3-container city"style="display:none;">
+			  <table class="table table-hover" style="text-align:left;">
+	          <tr style="background-color:orange;" >
+			    <th>S.NO</th>
+				<th>COLLEGE NAME</th>
+				<th>CATEGORY</th> 
+			  </tr>	
+			  
+			  <tr>
+			    <td>1</td>
+				<td><a href="http://maids.ac.in/">MAULANA AZAD INSTITUTE OF DENTAL SCIENCES - [MAIDS], NEW DELHI</a></td>
+				<td>GOV.</td>
+			  </tr>	
+			  
+			  <tr>
+			    <td>2</td>
+				<td><a href="https://manipal.edu/mcods-mangalore.html"> MANIPAL COLLEGE OF DENTAL SCIENCES - [MCODS], MANGALORE</a></td>
+				<td>GOV.</td>
+			  </tr>
+			  
+			  <tr>
+			    <td>3</td>
+				<td><a href="http://www.sdmcds.org/">SDM COLLEGE OF DENTAL SCIENCES AND HOSPITAL SATTUR, DHARWAD</a></td>
+				<td>GOV.</td>
+			  </tr>
+			  
+			  <tr>
+			    <td>4</td>
+				<td><a href="">GOVERNMENT DENTAL COLLEGE & HOSPITAL, MUMBAI</a></td>
+				<td>GOV.</td>
+			  </tr>
+			  
+			  <tr>
+			    <td>5</td>
+				<td><a href="http://www.kgmu.org/">KING GEORGE'S MEDICAL UNIVERSITY - [KGMU], LUCKNOW</a></td>
+				<td>GOV.</td>
+			  </tr>
+			  
+			  <tr>
+			    <td>6</td>
+				<td><a href="http://absmids.nitte.edu.in/">A B SHETTY MEMORIAL INSTITUTE OF DENTAL SCIENCES - [ABSMIDS], MANGALORE</a></td>
+				<td>GOV.</td>
+			  </tr>
+			  
+			  <tr>
+			    <td>7</td>
+				<td><a href="http://pgimsrohtak.nic.in/">PT BHAGWAT DAYAL SHARMA POST GRADUATE INSTITUTE OF MEDICAL SCIENCES - [PGIMS], ROHTAK</a></td>
+				<td>GOV.</td>
+			  </tr>
+			  
+			  <tr>
+			    <td>8</td>
+				<td><a href="http://www.csmssdental.com/"> GOVERNMENT DENTAL COLLEGE & HOSPITAL, AURANGABAD</a></td>
+				<td>GOV.</td>
+			  </tr>
+			  
+			  <tr>
+			    <td>9</td>
+				<td><a href="https://en.wikipedia.org/wiki/Dr._R._Ahmed_Dental_College_and_Hospital">DR. R. AHMED DENTAL COLLEGE AND HOSPITAL, KOLKATA</a></td>
+				<td>GOV.</td>
+			  </tr>
+			  
+			  <tr>
+			    <td>10</td>
+				<td><a href="http://srmdentalcollege.ac.in/">SRM DENTAL COLLEGE, CHENNAI</a></td>
+				<td>GOV.</td>
+			  </tr>
+	   </table>	
+	</div>
+			 
+		 </div>
+   </div> 
+</div>
+<!--End Government page-->
+
+<!--Start Private page-->
+<div class="w3-container w3-animate-zoom" id="Private1" style="display:none;">
+    <h1 class="w3-xxlarge"style="color:#17141a;">Top Private Engineering Institutes In India</h1><br><br>
+	  <div class="w3-row">
+        <div class="w3-col m6 w3-center">
+	         <div class="w3-panel w3-card w3-light-grey"> 
+                <h2>Birla Institute of Technology and Science, Pilani</h2><br>
+				<p style="color:blue;">Founded in 1964, BITS Pilani is the best private engineering 
+				   college in the country, imparting great education and excellent 
+				   placements.</p><br>
+				   
+			<button onclick="document.getElementById('bits').style.display='block'" class="w3-button w3-black">More</button><br><br>
+
+              <div id="bits" class="w3-modal w3-animate-zoom">
+                <div class="w3-modal-content w3-card-4">
+                   <header class="w3-container"style="background-color:orange;"><h1>Birla Institute of Technology and Science, Pilani </h1>
+                      <span onclick="document.getElementById('bits').style.display='none'" class="w3-button w3-large w3-display-topright w3-opacity">&times;</span>
+		           </header>
+				   
+				   <div class="w3-container">
+				     <div class="w3-row">
+                        <div class="w3-col m8 w3-center">
+				             <h3 style="text-align:left;">About</h3>
+							   <p style="text-align:left;color:gray;">Located in the Vidya Vihar campus adjacent to Pilani town in Jhunjhunu District,
+							   Rajasthan, it has been the hallmark of highest quality technical education in India.
+							   Built on a sprawling 328 acres land, the Institute has buildings, hostels and residential
+							   quarters for staff with neatly laid out roads, lawns, and gardens. It is probably the best
+							   among the top private engineering colleges in the country.</p>
+							 <h3 style="text-align:left;">Placements</h3>
+							   <p style="text-align:left;color:gray;"> BITS focuses on giving its students a well-rounded exposure to 
+							   theory as well as practical knowledge, with an emphasis on developing soft skills. 
+							   This, coupled with an arrangement of two placement seasons every year, has made it 
+							   a preferred destination for top recruiters.</p>
+							 <h3 style="text-align:left;">Courses</h3>
+							  <p style="text-align:left;color:gray;">Civil,Chemical, Electronics & Instrumentation,, Mechanical,
+							  Manufacturing, Electrical & Electronics & Computer Science.</p>
+                         </div>	
+
+                         <div class="w3-col m4 w3-center">
+						    <img class="w3-image w3-center" src="image/bitslogo.jpg"><br><br>
+							<img class="w3-image w3-center" src="image/bits2.jpg">
+                         </div>						 
+				      </div>
+
+
+					  
+					<div class="w3-row">
+                        <div class="w3-col m8 w3-center">		 
+                             <h3 style="text-align:left;">Vice - Chancellor, BITS Pilani</h3><br>
+							   <p style="text-align:left;color:gray;">Souvik Bhattacharyya</p>
+                        </div>       
+                        <div class="w3-col m4 w3-center">
+						  <img class="w3-image w3-center" src="image/vice-bits.jpg">
+                        </div>						
+				    </div>
+					
+				</div>		
+			</div>
+				  
+		  </div>		
+	   </div>
+	   
+  </div><br>
+      <div class="w3-col m6 w3-center">
+		<iframe width="500" height="200" src="https://www.youtube.com/embed/gpPwiXiqoWM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	</div>
+ </div><br>
+	
+	<div class="w3-row">
+        <div class="w3-col m6 w3-center">
+	         <div class="w3-panel w3-card w3-light-grey"> 
+                <h2>Dhirubhai Ambani IICT – Gandhinagar</h2><br>
+				<p style="color:blue;">Created under the state act of Gujarat, in a 
+				relatively short period of 15 years, IICT has 
+				consistently been ranked as one of the best
+				technological institutes in the country in the
+				fields of Computer Science, Electronics and
+				Communication Engineering and IT</p><br>
+				
+				<button onclick="document.getElementById('ambani').style.display='block'" class="w3-button w3-black">More</button><br><br>
+
+              <div id="ambani" class="w3-modal w3-animate-zoom">
+                <div class="w3-modal-content w3-card-4">
+                   <header class="w3-container"style="background-color:orange;"><h1>Dhirubhai Ambani IICT – Gandhinagar</h1>
+                      <span onclick="document.getElementById('ambani').style.display='none'" class="w3-button w3-large w3-display-topright w3-opacity">&times;</span>
+		           </header>
+				   
+				   <div class="w3-container">
+				     <div class="w3-row">
+                        <div class="w3-col m8 w3-center">
+				             <h3 style="text-align:left;">About</h3>
+							   <p style="text-align:left;color:gray;"></p>
+							 <h3 style="text-align:left;">Placements</h3>
+							   <p style="text-align:left;color:gray;"></p>
+							 <h3 style="text-align:left;">Courses</h3>
+							  <p style="text-align:left;color:gray;">Civil,Chemical, Electronics & Instrumentation,, Mechanical,
+							  Manufacturing, Electrical & Electronics & Computer Science.</p>
+                         </div>	
+
+                         <div class="w3-col m4 w3-center">
+						    <img class="w3-image w3-center" src="image/.jpg"><br><br>
+							<img class="w3-image w3-center" src="image/.jpg">
+                         </div>						 
+				      </div>
+
+
+					  
+					<div class="w3-row">
+                        <div class="w3-col m8 w3-center">		 
+                             <h3 style="text-align:left;">Vice - Chancellor</h3><br><br><br>
+							   <p style="text-align:left;color:gray;"></p>
+                        </div>       
+                        <div class="w3-col m4 w3-center">
+						  <img class="w3-image w3-center" src="image/.jpg">
+                        </div>						
+				    </div>
+				 </div>		
+			</div>
+		    </div>
+          </div>			
+	    </div><br>
+		    		 <div class="w3-col m6 w3-center">
+		              <iframe width="500" height="250" src="https://www.youtube.com/embed/XuGtAeEHKwI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	                </div>         
+   </div><br>
+	
+	<div class="w3-row">
+        <div class="w3-col m6 w3-center">
+	         <div class="w3-panel w3-card w3-light-grey"> 
+                <h2>Vellore Institute of Technology – Vellore</h2><br>
+				<p style="color:blue;">Established with the aim of providing quality
+				higher education at par with international standards,
+				VIT, has a very cosmopolitan atmosphere with students 
+				coming in from all over the world. Spread across a vast
+				area of 250 acres; it has auditoriums, plush open spaces, 
+				outdoor stages and much more. It has been one of the top 
+				private engineering colleges in the country for a long time.</p><br>
+				
+				<button onclick="document.getElementById('vellore').style.display='block'" class="w3-button w3-black">More</button><br><br>
+
+              <div id="vellore" class="w3-modal w3-animate-zoom">
+                <div class="w3-modal-content w3-card-4">
+                   <header class="w3-container"style="background-color:orange;"><h1>Vellore Institute of Technology – Vellore</h1>
+                      <span onclick="document.getElementById('vellore').style.display='none'" class="w3-button w3-large w3-display-topright w3-opacity">&times;</span>
+		           </header>
+				   
+				   <div class="w3-container">
+				     <div class="w3-row">
+                        <div class="w3-col m8 w3-center">
+				             <h3 style="text-align:left;">About</h3>
+							   <p style="text-align:left;color:gray;"></p>
+							 <h3 style="text-align:left;">Placements</h3>
+							   <p style="text-align:left;color:gray;"></p>
+							 <h3 style="text-align:left;">Courses</h3>
+							  <p style="text-align:left;color:gray;">Civil,Chemical, Electronics & Instrumentation,, Mechanical,
+							  Manufacturing, Electrical & Electronics & Computer Science.</p>
+                         </div>	
+
+                         <div class="w3-col m4 w3-center">
+						    <img class="w3-image w3-center" src="image/.jpg"><br><br>
+							<img class="w3-image w3-center" src="image/.jpg">
+                         </div>						 
+				      </div>
+
+
+					  
+					<div class="w3-row">
+                        <div class="w3-col m8 w3-center">		 
+                             <h3 style="text-align:left;">Vice - Chancellor</h3><br><br><br>
+							   <p style="text-align:left;color:gray;"></p>
+                        </div>       
+                        <div class="w3-col m4 w3-center">
+						  <img class="w3-image w3-center" src="image/.jpg">
+                        </div>						
+				    </div>
+				 </div>		
+			</div>
+				  
+		    </div>		
+
+		    </div>		
+	    </div>
+		   		
+	   
+                    <div class="w3-col m6 w3-center">
+		              <iframe width="500" height="250" src="https://www.youtube.com/embed/Yg5-CNyk-Ow" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	                </div>
+    </div>
+	
+	<div class="w3-row">
+        <div class="w3-col m6 w3-center">
+	         <div class="w3-panel w3-card w3-light-grey"> 
+                <h2>Birla Institute of Technology (BIT) – Mesra (Ranchi)</h2><br>
+				<p style="color:blue;">Bit Mesra has consistently been amongst the elite
+				academic institutions in India, playing a pivotal 
+				role in both education and research. Established by
+				industrialist and philanthropist B. M. Birla</p><br>
+				
+			  <button onclick="document.getElementById('bits2').style.display='block'" class="w3-button w3-black">More</button><br><br>
+
+              
+		<div class="w3-col m6 w3-center">
+		
+		</div>
+		
+        </div>
+	   </div>		
+	  </div>	
+	
+	<div class="w3-row">
+        <div class="w3-col m6 w3-center">
+	         <div class="w3-panel w3-card w3-light-grey"> 
+                <h2>PSG College of Technology – Coimbatore</h2><br>
+				<p style="color:blue;">The PSG College of Technology is a government-aided 
+				autonomous institution affiliated to Anna University,
+				Chennai. It is spread over 45 acres of land, which is 
+				economically utilized for the college, hostels, staff 
+				quarters, play fields and gardens. </p><br>
+				
+				<button onclick="document.getElementById('psg').style.display='block'" class="w3-button w3-black">More</button><br><br>
+
+              
+		<div class="w3-col m6 w3-center">
+		
+		</div>
+    </div>
+			</div>		
+	    </div>
+	
+	<div class="w3-row">
+        <div class="w3-col m6 w3-center">
+	         <div class="w3-panel w3-card w3-light-grey"> 
+                <h2>MIT Pune-Maharashtra Institute of Technology, Pune</h2><br>
+				<p style="color:blue;">Established in 1983, MIT is among the top engineering 
+				colleges in India. With a total of 400 computers connected 
+				with fibre-optic backbone networks and server-client technology,
+				it has managed to develop an e-campus with a state-of-the-art 
+				Internet Centre.</p><br>
+				
+				<button onclick="document.getElementById('mit').style.display='block'" class="w3-button w3-black">More</button><br><br>
+
+              
+		<div class="w3-col m6 w3-center">
+		
+		</div>
+    </div>
+		</div>		
+	    </div>
+	
+	<div class="w3-row">
+        <div class="w3-col m6 w3-center">
+	         <div class="w3-panel w3-card w3-light-grey"> 
+                <h2>National Institute of Engineering (NIE), Mysore</h2><br>
+				<p style="color:blue;">With an aim to impart state-of-the-art engineering education,
+				NIE was started in the year 1946 and is one of the oldest and top 
+				engineering colleges in India. It has been ranked 27th by Outlook 
+				Magazine among the top 50 Private engineering colleges in India and 
+				1st among the private-aided engineering institutes in State. </p><br>
+				
+				<button onclick="document.getElementById('nie').style.display='block'" class="w3-button w3-black">More</button><br><br>
+
+              
+		<div class="w3-col m6 w3-center">
+		
+		</div>
+    </div>
+		</div>		
+	    </div>
+	
+	<div class="w3-row">
+        <div class="w3-col m6 w3-center">
+	         <div class="w3-panel w3-card w3-light-grey"> 
+                <h2>Manipal Institute of Technology, Udupi – Karnataka</h2><br>
+				<p style="color:blue;">MIT is affiliated to various universities in South 
+				India and has collaborations with more than fifteen 
+				foreign universities. MIT has an A+ category rating 
+				from the Institute by MHRD, India. Its aim is to be 
+				a world-class technical institution fostering innovation, 
+				leadership, and entrepreneurial spirit. </p><br>
+				
+				<button onclick="document.getElementById('mit2').style.display='block'" class="w3-button w3-black">More</button><br><br>
+
+              
+		<div class="w3-col m6 w3-center">
+		
+		</div>
+    </div>
+		</div>		
+	    </div>
+	
+	<div class="w3-row">
+        <div class="w3-col m6 w3-center">
+	         <div class="w3-panel w3-card w3-light-grey"> 
+                <h2>SRM Institute of Science and Technology</h2><br>
+				<p style="color:blue;">The institute gained deemed status during the 2003-2004 
+				academic year and was renamed SRM Institute of Science and Technology. 
+				It became SRM University in 2006 following the permission by the UGC
+				for Deemed to be Universities to be called as Universities.</p><br>
+				
+				<button onclick="document.getElementById('srm').style.display='block'" class="w3-button w3-black">More</button><br><br>
+
+              
+		<div class="w3-col m6 w3-center">
+		
+		</div>
+    </div>
+		</div>		
+	    </div>
+	
+	<div class="w3-row">
+        <div class="w3-col m6 w3-center">
+	         <div class="w3-panel w3-card w3-light-grey"> 
+                <h2>RV College of Engineering, Bangalore</h2><br>
+				<p style="color:blue;">Established in 1963, the RV College of Engineering
+				today is one of the earliest self-financing engineering
+				colleges in the country. Run by the non-profit Rashtreeya
+				Sikshana Samithi Trust (RSST)</p><br>
+				
+				<button onclick="document.getElementById('rv').style.display='block'" class="w3-button w3-black">More</button><br><br>
+    						  
+	    <div class="w3-col m6 w3-center">
+		
+		</div>
+   </div>
+   		</div>		
+	    </div>
+	
+	
+	    <h1 class="w3-xxlarge"style="color:#17141a;">Top Private Medical Colleges In India</h1><br><br>
+	
+
+</div>
+<!--End private page-->
+
+<!--Start Foreign page-->
+<div class="w3-container" id="Foreign"style="display:none;">
+   
+</div>
+<!--End Foreign page-->
+
+<!--Start Courses page-->
+<div class="w3-container" id="Courses"style="display:none;">
+</div>
+<!--End Courses page-->
+
+<!--Start Others page-->
+<div class="w3-container" id="Others"style="display:none;">
+</div>
+<!--End Others page-->
+
+<!--Start Subscription page-->
+<div class="w3-container" id="Subscription"style="display:none;">
+</div>
+<!--End Subscription page-->
+
+<!--Start Login page-->
+<div class="w3-container" id="Login"style="display:none;">
+</div>
+<!--End Login page-->
+
+<!--Start footer-->
+<footer class="flex-rw">
+  
+  <ul class="footer-list-top">
+    <li>
+      <h4 class="footer-list-header"style="color:black;">About Me</h4></li>
+    <li><a  class="generic-anchor footer-list-anchor" itemprop="significantLink" style="color:black;">VAIBHAV SINGH</a></li>
+    <li><a  class="generic-anchor footer-list-anchor" itemprop="significantLink">9554642920</a></li>
+    <li><a  class="generic-anchor footer-list-anchor" itemprop="significantLink">singhvaibhav715@gmail.com</a></li>
+  </ul>
+  <ul class="footer-list-top">
+    <li>
+      <h4 class="footer-list-header"style="color:black;">Quick links</h4></li>
+
+
+    <li><a href="#" class="generic-anchor footer-list-anchor"style="color:black;">I.S.R.O</a></li>
+    <li><a href="#" class="generic-anchor footer-list-anchor">C.N.S.A</a></li>
+    <li><a href="#" class="generic-anchor footer-list-anchor">NASA</a></li>
+
+
+  </ul>
+  <ul class="footer-list-top">
+    <li id='help'>
+      <h4 class="footer-list-header"style="color:black;">Quick links</h4></li>
+    <li><a href="#" class="generic-anchor footer-list-anchor" itemprop="significantLink"style="color:black;">Massachusetts Institute of Technology (MIT)</a></li>
+    <li><a href="#"class="generic-anchor footer-list-anchor" itemprop="significantLink">Stanford University</a></li>
+    <li><a href="#" class="generic-anchor footer-list-anchor" itemprop="significantLink">University of Cambridge.</a></li>
+  </ul>
+  <section class="footer-social-section flex-rw">
+      <span class="footer-social-overlap footer-social-icons-wrapper">
+      <a href="https://www.facebook.com/" class="generic-anchor" target="_blank" title="Facebook" itemprop="significantLink"><i class="fa fa-facebook"></i></a>
+      <a href="https://twitter.com/" class="generic-anchor" target="_blank" title="Twitter" itemprop="significantLink"><i class="fa fa-twitter"></i></a>
+      <a href="http://instagram.com/" class="generic-anchor" target="_blank" title="Instagram" itemprop="significantLink"><i class="fa fa-instagram"></i></a>
+      <a href="https://www.youtube.com/" class="generic-anchor" target="_blank" title="Youtube" itemprop="significantLink"><i class="fa fa-youtube"></i></a>
+      <a href="https://plus.google.com/" class="generic-anchor" target="_blank" title="Google Plus" itemprop="significantLink"><i class="fa fa-google-plus"></i></a>
+      </span>
+  </section>
+  <section class="footer-bottom-section flex-rw">
+<div class="footer-bottom-wrapper">   
+<i class="fa fa-copyright" role="copyright" style="color:black;">
+ 
+</i> <span style="color:black;">2018 VAIBHAV SINGH </span><address class="footer-address" role="company address" style="color:black;">AMBEDKAR NAGAR</address><span class="footer-bottom-rights" style="color:black;"> - All Rights Reserved - </span>
+    </div>
+    <div class="footer-bottom-wrapper">
+    <a class="generic-anchor" rel="nofollow">Terms</a> | <a href="/privacy-policy.html" class="generic-anchor" rel="nofollow">Privacy</a>
+      </div>
+  </section>
+</footer>
+</body>
+
+
+</html> 
